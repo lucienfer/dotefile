@@ -1,0 +1,102 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  border: none;
+  border-radius: 0;
+  font-family: "otf-font-awesome";
+  font-size: 15px;
+  font-weight: 500;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(31, 36, 47, 0.87);
+  /*    background-color: rgba(43, 48, 59, 0.5); */
+  border-bottom: 1px solid rgba(24, 29, 42, 0.9);
+  color: #cfd6e6;
+}
+
+#workspaces button {
+  padding: 0px 3px 0px 3px;
+  color: rgba(75, 81,98, 0.73);
+  /*    background-color: rgba(0,0,0,0.3); */
+}
+
+#workspaces button.active {
+  /*    box-shadow: inset 0 -2px #c9545d; */
+  color:#ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#mode {
+  background-color: #64727D;
+  border-bottom: 3px solid #ffffff;
+}
+
+#mpd {
+  margin: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(0,0,0,0.3);
+  color: #ffffff;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#clock {
+  font-size:15px;
+  font-weight: bold;
+}
+
+#cpu {
+  	font-family: "H5PFontAwesome4";
+	font-weight: bold;
+}
+
+#memory {
+  	font-family: "H5PFontAwesome4";
+	font-weight: bold;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+}
+
+#temperature.critical {
+  background-color: #eb4d4b;
+}
+
+#idle_inhibitor.activated {
+  background-color: #ecf0f1;
+  color: #2d3436;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}

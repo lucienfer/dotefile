@@ -1,0 +1,6 @@
+If:
+  PathMatch: .*\.cpp
+
+CompileFlags:
+  Add: [-Wall, -Wextra, -Werror, -std=c++98]
+  Compiler: c++
