@@ -11,5 +11,14 @@
 
 pkg/
 src/
+dconf/
+kde.org/
+dconf/
+mimeapps.list
+pulse/
+session/
+systemd/
+VirtualBox/
+yay/
 
 .env
